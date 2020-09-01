@@ -5,12 +5,7 @@ import './iconoSetting.js'
 const question = document.querySelector('.container__question')
 const ansewerButtons = document.querySelectorAll('.container__ansewer')
 const containerReset = document.querySelector('.container__reset')
-const scoreWin = document.getElementById('scoreWin')
-const scoreLose = document.getElementById('scoreLose')
-let win = 0
-let lose = 0
-scoreWin.textContent = win
-scoreLose.textContent = lose
+
 const theAcount = () => {
     question.innerHTML = acount
     let {ansewers,rightAnsewerPosition} =  generateAnsewers()
@@ -40,13 +35,9 @@ ansewerButtons.forEach(ansewerButton => {
             if(e.target.textContent == ansewersText[rightAnsewerPosition]) {
                 result.textContent = 'Correcto'
                 result.classList.add('right')
-                win++
-                scoreWin.textContent = win
             }else {
                 result.textContent = 'Incorrecto'
                 result.classList.add('mistake')
-                lose++
-                scoreLose.textContent = lose
             }
              ansewerButtons.forEach(button => {
                     if(button.textContent == ansewersText[rightAnsewerPosition]) {
