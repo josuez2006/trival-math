@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='responsive.css'>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <header class="header">
+            <div class="header__score">
+                <div>Ganadas: <span id="scoreWin"></span></div>
+                <div>Perdidas: <span id="scoreLose"></span></div>
+            </div>
+            <!-- icono settings -->
+            <i class="fas fa-cog header__icon"></i>
+            <!-- window settings -->
+            <form class="header__window" id="form">
+                <!-- window title -->
+                <h2 class="window__title">Dificultad</h2>
+
+                <!-- options -->
+                <div class="window__option">
+                    <!-- tipo de operacion -->
+                    Operacion
+                    <!-- icono de menu dezplegable -->
+                    <i class="fas fa-caret-down" id="iconoOperacion"></i>
+                </div>
+                <div class="window__option">
+                    <!-- tipo de tamaño de numeros -->
+                    Tamaño
+                    <!-- icono de menu dezplegable -->
+                    <i class="fas fa-caret-down" id="iconoTamaño"></i>
+                    
+                </div>
+                <!-- buttons -->
+                <div
+                class="window__buttons">
+                    <!-- confirm button -->
+                    <button class="window__button" id="windowConfirm">Confirmar</button>
+                    <!-- cancel button -->
+                    <button class="window__button" id="windowCancel">Cancelar</button>
+                </div>
+            </form>
+        </header>
+        <div class="container__question">2 x 5</div>
+        <div class="container__ansewers">
+            <button class="container__ansewer">5</button>
+            <button class="container__ansewer">10</button>
+            <button class="container__ansewer">6</button>
+            <button class="container__ansewer">2</button>
+        </div>
+        <div class="container__reset">
+        </div>
+    </div>
+    <script src='js/main.js' type="module"></script>
+</body>
+</html>
